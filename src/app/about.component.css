@@ -18,6 +18,8 @@ h2 { color: var(--ink); font-size: clamp(2.8rem, 4.4vw, 4.3rem); letter-spacing:
 .expertise-list h3 { color: var(--ink); font-size: 1.05rem; font-weight: 500; margin: 0 0 7px; }
 .expertise-list p { color: var(--muted); font-size: .78rem; line-height: 1.55; margin: 0; }
 .expertise-tag { border-left: 1px solid var(--line); color: var(--teal); font-size: .68rem; padding: 2px 0 2px 14px; }
+.philosophy { border-top: 1px solid var(--line); margin-bottom: 90px; max-width: 760px; padding: 75px 0 15px; scroll-margin-top: 35px; }
+.philosophy p:not(.eyebrow) { color: var(--muted); font-size: .94rem; line-height: 1.8; max-width: 680px; }
 .about-cta { background: var(--sage); margin: 0 -42px; padding: 70px 42px 76px; }
 .about-cta h2 { margin-bottom: 10px; }
 .about-cta .button { margin-top: 14px; }

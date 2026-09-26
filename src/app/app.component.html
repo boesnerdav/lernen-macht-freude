@@ -7,7 +7,13 @@
     <div class="nav-links">
       <a routerLink="/" fragment="angebot">Kurse</a>
       <a routerLink="/" fragment="methode">Methode</a>
-      <a class="about-link" routerLink="/ueber-mich" routerLinkActive="active" ariaCurrentWhenActive="page">Über mich</a>
+      <details class="nav-dropdown">
+        <summary>Über mich</summary>
+        <div class="dropdown-menu">
+          <a routerLink="/ueber-mich" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Mein Profil</a>
+          <a routerLink="/ueber-mich" fragment="lernphilosophie">Meine Lernphilosophie</a>
+        </div>
+      </details>
       <a class="nav-cta" routerLink="/" fragment="kontakt">Kennenlerngespräch</a>
     </div>
   </nav>
