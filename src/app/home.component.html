@@ -1,0 +1,72 @@
+  <section class="hero" id="start">
+    <div class="hero-copy">
+      <p class="eyebrow">Deutsch als Fremdsprache</p>
+      <h1>Deutsch lernen.<br><em>Sicher sprechen.</em></h1>
+      <p class="intro">Individuelle Deutschstunden für Erwachsene, die im Alltag, im Beruf und in neuen Begegnungen souverän kommunizieren möchten.</p>
+      <div class="hero-actions">
+        <a class="button" routerLink="/" fragment="kontakt">Erstgespräch anfragen <span aria-hidden="true">→</span></a>
+        <span class="availability"><span class="status-dot"></span>Online &amp; vor Ort</span>
+      </div>
+      <div class="hero-proof">
+        <span class="proof-number">A1–C1</span>
+        <span>Alle Niveaustufen<br>willkommen</span>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="Notizbuch mit deutschen Redewendungen" role="img">
+      <div class="art-label">WORTSCHATZ<br><span>für deinen Alltag</span></div>
+      <div class="language-note note-one">Wie geht es dir?</div>
+      <div class="language-note note-two">Ich freue mich<br><small>auf unser Gespräch.</small></div>
+      <div class="notebook">
+        <span class="notebook-title">Heute</span>
+        <span class="notebook-line"></span>
+        <span class="notebook-line short"></span>
+        <span class="notebook-word">sprechen</span>
+        <span class="notebook-line"></span>
+      </div>
+      <div class="art-caption">01 / KOMMUNIKATION</div>
+    </div>
+  </section>
+
+  <section class="offer" id="angebot">
+    <div class="section-heading">
+      <p class="eyebrow">Das passende Format</p>
+      <h2>Dein Deutsch.<br>Dein Tempo.</h2>
+      <p class="section-intro">Du lernst dort, wo du Deutsch wirklich brauchst. Klar strukturiert, persönlich begleitet und mit Themen, die zu deinem Leben passen.</p>
+    </div>
+    <div class="subject-list">
+      @for (subject of subjects; track subject; let index = $index) {
+        <article class="subject" [class.accent]="index === 1">
+          <span class="subject-number">0{{ index + 1 }}</span>
+          <div>
+            <h3>{{ subject }}</h3>
+            <p>{{ subjectDetails[index] }}</p>
+          </div>
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="method" id="methode">
+    <div class="method-heading">
+      <p class="eyebrow">So arbeiten wir</p>
+      <h2>Sprache, die<br>im Leben bleibt.</h2>
+    </div>
+    <div class="method-grid">
+      <article>
+        <span class="method-index">01</span>
+        <h3>Reden statt nur Regeln</h3>
+        <p>Du sprichst von Anfang an. Grammatik wird verständlich, weil sie in echten Situationen Sinn ergibt.</p>
+      </article>
+      <article>
+        <span class="method-index">02</span>
+        <h3>Inhalte mit Bedeutung</h3>
+        <p>Ob Bewerbung, Small Talk oder Behördentermin: Wir üben genau die Sprache, die du bald brauchst.</p>
+      </article>
+      <article>
+        <span class="method-index">03</span>
+        <h3>Fortschritt, den du spürst</h3>
+        <p>Klare Ziele, ehrliches Feedback und kleine Schritte machen deine Entwicklung sichtbar.</p>
+      </article>
+    </div>
+  </section>

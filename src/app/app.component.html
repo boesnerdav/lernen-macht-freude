@@ -1,0 +1,22 @@
+<main>
+  <nav class="navigation" aria-label="Hauptnavigation">
+    <a class="brand" routerLink="/" aria-label="Deutschraum Startseite">
+      <span class="brand-mark">D</span>
+      <span>Deutschraum</span>
+    </a>
+    <div class="nav-links">
+      <a routerLink="/" fragment="angebot">Kurse</a>
+      <a routerLink="/" fragment="methode">Methode</a>
+      <a class="about-link" routerLink="/ueber-mich" routerLinkActive="active" ariaCurrentWhenActive="page">Über mich</a>
+      <a class="nav-cta" routerLink="/" fragment="kontakt">Kennenlerngespräch</a>
+    </div>
+  </nav>
+  <router-outlet />
+
+  <footer id="kontakt">
+    <span class="brand"><span class="brand-mark">D</span> Deutschraum</span>
+    <span>Dein nächster Satz beginnt hier.</span>
+    <a href="mailto:hallo@deutschraum.de">hallo@deutschraum.de</a>
+    <a routerLink="/datenschutz">Datenschutz</a>
+  </footer>
+</main>

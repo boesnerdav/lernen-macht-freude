@@ -1,0 +1,40 @@
+:host { display: block; }
+.hero { align-items: center; display: grid; gap: 80px; grid-template-columns: 1fr .86fr; min-height: 610px; padding: 74px 0 100px; }
+h1 { color: var(--ink); font-size: clamp(4.1rem, 7.5vw, 7.1rem); letter-spacing: -.06em; line-height: .87; margin-bottom: 32px; }
+.intro { color: var(--muted); font-size: 1.02rem; line-height: 1.7; max-width: 480px; }
+.hero-actions { align-items: center; display: flex; flex-wrap: wrap; gap: 22px; margin-top: 28px; }
+.availability { color: var(--muted); font-size: .72rem; }
+.status-dot { background: #5c9a72; border-radius: 50%; display: inline-block; height: 7px; margin-right: 6px; width: 7px; }
+.hero-proof { align-items: center; border-top: 1px solid var(--line); color: var(--muted); display: flex; font-size: .7rem; gap: 14px; line-height: 1.4; margin-top: 55px; padding-top: 14px; width: 210px; }
+.proof-number { color: var(--ink); font-family: 'Newsreader', Georgia, serif; font-size: 1.5rem; }
+.hero-art { background: var(--teal); height: 510px; overflow: hidden; position: relative; }
+.art-label { color: #f3ddaf; font-size: .64rem; font-weight: 700; letter-spacing: .13em; line-height: 1.5; position: absolute; right: 28px; text-align: right; top: 27px; }
+.art-label span { color: rgba(251,250,247,.72); font-weight: 400; letter-spacing: .03em; }
+.notebook { background: var(--white); box-shadow: 18px 20px 0 rgba(24,53,54,.17); color: var(--ink); display: flex; flex-direction: column; gap: 16px; height: 275px; justify-content: center; left: 20%; padding: 38px 35px; position: absolute; top: 28%; transform: rotate(-6deg); width: 270px; }
+.notebook-title { color: var(--accent); font-size: .64rem; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.notebook-line { background: var(--line); display: block; height: 1px; width: 100%; }
+.notebook-line.short { width: 64%; }
+.notebook-word { color: var(--ink); font-family: 'Newsreader', Georgia, serif; font-size: 2.35rem; }
+.language-note { background: #f2be75; color: var(--ink); font-family: 'Newsreader', Georgia, serif; padding: 12px 14px; position: absolute; }
+.note-one { right: 7%; top: 28%; transform: rotate(5deg); }
+.note-two { bottom: 16%; font-size: 1.05rem; left: 9%; transform: rotate(4deg); }
+.note-two small { color: var(--teal); font-family: 'DM Sans', sans-serif; font-size: .62rem; }
+.art-caption { bottom: 20px; color: rgba(251,250,247,.65); font-size: .62rem; letter-spacing: .12em; position: absolute; right: 25px; }
+.offer { border-top: 1px solid var(--line); display: grid; gap: 100px; grid-template-columns: .8fr 1.2fr; padding: 92px 0; }
+h2 { color: var(--ink); font-size: clamp(2.8rem, 4.5vw, 4.5rem); letter-spacing: -.05em; line-height: .93; margin-bottom: 23px; }
+.section-intro { color: var(--muted); font-size: .88rem; line-height: 1.7; max-width: 290px; }
+.subject-list { border-top: 1px solid var(--line); }
+.subject { align-items: start; border-bottom: 1px solid var(--line); display: grid; gap: 18px; grid-template-columns: 42px 1fr 30px; padding: 26px 0; }
+.subject-number, .method-index { color: var(--accent); font-size: .68rem; font-weight: 700; letter-spacing: .08em; }
+.subject h3, .method-grid h3 { font-size: 1.05rem; font-weight: 500; margin: 0 0 8px; }
+.subject h3 { color: var(--ink); }
+.subject.accent h3 { color: var(--teal); }
+.subject p { color: var(--muted); font-size: .78rem; line-height: 1.5; margin: 0; }
+.arrow { color: var(--accent); font-size: 1.15rem; }
+.method { background: var(--sage); display: grid; gap: 100px; grid-template-columns: .8fr 1.2fr; margin: 0 -42px; padding: 88px 42px; }
+.method-grid { display: grid; gap: 30px; grid-template-columns: repeat(3, 1fr); }
+.method-grid article { border-top: 1px solid rgba(24,53,54,.3); padding-top: 15px; }
+.method-grid h3 { margin-top: 45px; }
+.method-grid p { color: #52706e; font-size: .78rem; line-height: 1.65; }
+@media (max-width: 800px) { .hero { display: block; padding: 60px 0 75px; } h1 { font-size: 4.6rem; } .hero-art { height: 400px; margin-top: 55px; } .notebook { left: 17%; top: 24%; } .offer, .method { display: block; padding: 70px 0; } .subject-list, .method-grid { margin-top: 48px; } .method { margin: 0 -22px; padding-left: 22px; padding-right: 22px; } .method-grid { display: grid; gap: 24px; grid-template-columns: 1fr; } .method-grid h3 { margin-top: 25px; } }
+@media (max-width: 430px) { h1 { font-size: 3.7rem; } .hero-actions { align-items: flex-start; flex-direction: column; } .hero-art { height: 360px; } .notebook { height: 230px; left: 10%; padding: 27px; width: 235px; } .note-one { right: 4%; } .note-two { bottom: 9%; } }

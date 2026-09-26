@@ -1,0 +1,15 @@
+# Angular
+/dist
+/.angular
+/node_modules
+
+# IDE
+.idea
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# OS
+.DS_Store
+Thumbs.db
